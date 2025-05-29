@@ -21,14 +21,14 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Este é o meu portfólio pessoal, onde compartilho um pouco sobre mim,
-            minhas habilidades e projetos. Estou me especializando em
+            Bem-vindo ao meu portfólio pessoal, onde compartilho um pouco sobre
+            mim, minhas habilidades e projetos. Estou me especializando em
             desenvolvimento front-end, com foco na criação de interfaces
-            bonitas, funcionais e bem estruturadas.
+            modernas, funcionais e bem estruturadas.
           </p>
-          <div className="opacity-0 animate-fade-in-delay-4">
+          <div className="opacity-0 animate-fade-in-delay-4 mt-20">
             <a href="#projects" className="cosmic-button">
-              Veja meu trabalho
+              Veja meus trabalhos
             </a>
           </div>
         </div>
