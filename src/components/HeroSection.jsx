@@ -8,7 +8,7 @@ export const HeroSection = () => {
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="flex justify-center items-center">
-          <img src="/projects/minha-foto-img.png" alt='Minha-foto'/>
+          <img src="/projects/minha-foto-img.png" alt='Minha-foto' className="w-1/2 max-w-full sm:w-auto"/>
         </div>
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
