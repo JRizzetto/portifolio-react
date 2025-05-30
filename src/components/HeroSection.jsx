@@ -8,7 +8,11 @@ export const HeroSection = () => {
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="flex justify-center items-center">
-          <img src="/projects/minha-foto-img.png" alt='Minha-foto' className="w-1/2 max-w-full sm:w-auto  mt-50px"/>
+          <img
+            src="/projects/minha-foto-img.png"
+            alt="Minha-foto"
+            className="w-1/2 max-w-full sm:w-auto  mt-50px"
+          />
         </div>
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
@@ -23,12 +27,20 @@ export const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+          {/* Versão reduzida: visível só em telas menores que 640px */}
+          <p className="text-base text-muted-foreground mx-auto block sm:hidden">
+            Bem-vindo ao meu portfólio pessoal, onde compartilho um pouco sobre
+            mim, minhas habilidades e projetos.
+          </p>
+
+          {/* Versão completa: visível a partir de 640px */}
+          <p className="text-lg md:text-xl text-muted-foreground mx-auto hidden sm:block">
             Bem-vindo ao meu portfólio pessoal, onde compartilho um pouco sobre
             mim, minhas habilidades e projetos. Estou me especializando em
             desenvolvimento front-end, com foco na criação de interfaces
             modernas, funcionais e bem estruturadas.
           </p>
+          
           <div className="opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
               Veja meus trabalhos
