@@ -8,7 +8,7 @@ export const HeroSection = () => {
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="flex justify-center items-center">
-          <img src="/projects/minha-foto-img.png" alt='Minha-foto' className="w-1/2 max-w-full sm:w-auto"/>
+          <img src="/projects/minha-foto-img.png" alt='Minha-foto' className="w-1/2 max-w-full sm:w-auto  mt-50px"/>
         </div>
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
@@ -29,7 +29,7 @@ export const HeroSection = () => {
             desenvolvimento front-end, com foco na criação de interfaces
             modernas, funcionais e bem estruturadas.
           </p>
-          <div className="opacity-0 animate-fade-in-delay-4 mt-20">
+          <div className="opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
               Veja meus trabalhos
             </a>
