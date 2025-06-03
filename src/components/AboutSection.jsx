@@ -15,7 +15,7 @@ export const AboutSection = () => {
               Minha trajetória: da engenharia à criação com tecnologia
             </h3>
 
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-justify">
               Meu nome é Jefferson Wellington Bonfim Rizzetto, tenho 35 anos e
               sou apaixonado por tecnologia desde a infância. Aos 10 anos, já
               era fascinado por computadores, o que influenciou diretamente
@@ -24,7 +24,7 @@ export const AboutSection = () => {
               entanto, a vida acabou me levando por outros caminhos.
             </p>
 
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-justify">
               Sou formado em Engenharia Elétrica pela UNIP e atuei por alguns
               anos como engenheiro e responsável técnico. A maior parte da minha
               trajetória profissional, porém, foi na área comercial, trabalhando

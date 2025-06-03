@@ -60,18 +60,51 @@ const projects = [
       "https://www.linkedin.com/posts/jefferson-rizzetto_reactjs-vite-frontend-activity-7317909442220515329-v6B3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
   },
 
-    {
+  {
     id: 4,
     title: "Portifolio Fullstack + agentes de IA",
     description:
       "O projeto-portifolio-full-stack é uma aplicação full stack que integra tecnologias populares do mercado para criar uma vitrine digital das habilidades e projetos de um desenvolvedor, a aplicação incorpora agentes de IA inteligentes que têm acesso completo ao currículo, repositórios do GitHub e histórico do profissional.",
     image: "/projects/image4.png",
-    tags: ["React", "Next.js", "NestJS", "Prisma", "Supabase", "TailwindCSS", "n8n"],
+    tags: [
+      "React",
+      "Next.js",
+      "NestJS",
+      "Prisma",
+      "Supabase",
+      "TailwindCSS",
+      "n8n",
+    ],
     demoUrl: "https://github.com/JRizzetto/projeto-portifolio-full-stack",
-    githubUrl:
-      "https://github.com/JRizzetto/projeto-portifolio-full-stack",
+    githubUrl: "https://github.com/JRizzetto/projeto-portifolio-full-stack",
     linkedin:
       "https://www.linkedin.com/posts/jefferson-rizzetto_devfullstack-nextjs-nestjs-activity-7310375517445095425-Fc5B?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
+  },
+
+  {
+    id: 5,
+    title: "Instagram Clone Page do Naruto",
+    description:
+      "Recentemente, desenvolvi uma página Front-End inspirada no Instagram e com personagens do Naruto como usuários, trazendo elementos e funcionalidades essenciais da plataforma. O projeto foi feito com HTML, CSS e JavaScript totalamente responsiva.",
+    image: "/projects/image5.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    demoUrl: "https://jrizzetto.github.io/insta-clone-ON/",
+    githubUrl: "https://github.com/JRizzetto/insta-clone-ON",
+    linkedin:
+      "https://www.linkedin.com/posts/jefferson-rizzetto_programaaexaeto-codificaaexaeto-frontend-activity-7307780238879375360-6tG2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
+  },
+
+    {
+    id: 6,
+    title: "YouTube Page Clone",
+    description:
+      "Desenvolvido com foco em front-end, essa aplicação recria a interface do YouTube utilizando JavaScript, HTML, CSS e API (Application Programming Interface), garantindo uma experiência totalmente responsiva e com diversas funcionalidades inspiradas no YouTube.",
+    image: "/projects/image6.png",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    demoUrl: "https://github.com/JRizzetto/clones-page/tree/main/youtube-clone",
+    githubUrl: "https://github.com/JRizzetto/clones-page/tree/main/youtube-clone",
+    linkedin:
+      "https://www.linkedin.com/posts/jefferson-rizzetto_javascript-frontenddevelopment-webdevelopment-activity-7303467028760137728-IH53?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
   },
 ];
 
@@ -115,7 +148,7 @@ export const ProjectSection = () => {
                   ))}
                 </div>
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-muted-foreground text-sm mb-4 text-justify">
                   {project.description}
                 </p>
                 <div className="flex justify-between items-center">

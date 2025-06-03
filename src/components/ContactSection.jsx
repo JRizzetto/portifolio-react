@@ -44,7 +44,9 @@ export const ContactSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">Informações de contato</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              Informações de contato
+            </h3>
 
             <div className="space-y-6 justify-center">
               <div className="flex items-start space-x-4">
@@ -114,7 +116,7 @@ export const ContactSection = () => {
           >
             <h3 className="text-2xl font-semibold mb-6">Envie uma mensagem</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6 disabled">
               <div>
                 <label
                   htmlFor="name"
@@ -128,7 +130,7 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary cursor-not-allowed"
                   placeholder="Jefferson Rizzetto..."
                 />
               </div>
@@ -146,7 +148,7 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary cursor-not-allowed"
                   placeholder="exemplo@gmail.com"
                 />
               </div>
@@ -163,7 +165,7 @@ export const ContactSection = () => {
                   id="message"
                   name="message"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none cursor-not-allowed"
                   placeholder="Olá, eu gostaria de falar sobre..."
                 />
               </div>
