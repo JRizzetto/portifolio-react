@@ -3,108 +3,74 @@ import { ArrowRight, ExternalLink, Github, Linkedin } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Spotify Fullstack",
+    title: "Blog App Full Stack",
     description:
-      "Este é um projeto inspirado no Spotify, onde é possível visualizar artistas e músicas populares, além de escutar suas faixas preferidas.",
-    image: "/projects/image1.png",
-    tags: [
-      "React",
-      "Vite",
-      "JavaScript",
-      "Node.js",
-      "Express",
-      "MongoDB Atlas",
-    ],
-    demoUrl: "https://github.com/JRizzetto/spotify-fullstack",
-    githubUrl: "https://github.com/JRizzetto/spotify-fullstack",
+      "Aplicação full stack de blog com autenticação JWT, CRUD completo de posts, categorias, rotas protegidas e editor de texto rico. Projeto focado em integração frontend-backend e arquitetura real.",
+    image: "/projects/capa-Blog-App-Full-Stack.png",
+    tags: ["React", "Node.js", "Express", "MySQL", "JWT", "Axios", "Sass"],
+    demoUrl:
+      "https://www.linkedin.com/posts/jefferson-rizzetto_react-nodejs-javascript-activity-7417969621951148032-uBGN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
+    githubUrl:
+      "https://github.com/JRizzetto/full-stack-projects/tree/main/blog-app",
     linkedin:
-      "https://www.linkedin.com/posts/jefferson-rizzetto_desenvolvimentoweb-reactjs-nodejs-activity-7328391060525617152-h_ow?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
+      "https://www.linkedin.com/posts/jefferson-rizzetto_react-nodejs-javascript-activity-7417969621951148032-uBGN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
   },
 
   {
     id: 2,
-    title: "Gerenciamento de Eventos Fullstack",
+    title: "Book Shop Full Stack",
     description:
-      "Neste projeto os usuários podem, definir orçamento, escolher serviços como DJ, segurança, decoração e muito mais, tudo de forma simples e intuitiva. ",
-    image: "/projects/image2.png",
+      "Sistema completo de gerenciamento de livros com cadastro, edição, listagem e remoção. Projeto em produção com frontend, backend e banco de dados integrados.",
+    image: "/projects/Book-Shop-img.png",
     tags: [
       "React",
       "Vite",
-      "React Router DOM",
-      "Axios",
-      "React Toastify",
       "Node.js",
       "Express",
-      "MongoDB & Mongoose",
-      "Cors",
+      "MySQL",
+      "REST API",
+      "Deploy",
     ],
-    demoUrl:
-      "https://github.com/JRizzetto/React-JS-basico-ao-avan-ado/tree/main/13_PARTY-TIME",
+    demoUrl: "https://full-stack-projects-two-xi.vercel.app/",
     githubUrl:
-      "https://github.com/JRizzetto/React-JS-basico-ao-avan-ado/tree/main/13_PARTY-TIME",
+      "https://github.com/JRizzetto/full-stack-projects/tree/main/book-shop",
     linkedin:
-      "https://www.linkedin.com/posts/jefferson-rizzetto_tecnologiasusadas-react-nodejs-activity-7323735367679901696-vzAs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
+      "https://www.linkedin.com/posts/jefferson-rizzetto_book-shop-full-stack-activity-7411375529636917249-guBn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
   },
 
   {
     id: 3,
-    title: "Tela de Login",
+    title: "Sistema de Postagens Full Stack",
     description:
-      "Tela de Login com React + Simulação de Backend - Tela de login moderna utilizando tecnologias do ecossistema front-end. O objetivo era ir além do visual e simular uma autenticação real com backend usando o JSON Server.",
-    image: "/projects/image3.png",
-    tags: ["React", "Vite", "React Icons", "CSS3 ", "JSON Server"],
-    demoUrl: "https://tela-de-login-eight-theta.vercel.app/",
-    githubUrl:
-      "https://github.com/JRizzetto/React-JS-basico-ao-avan-ado/tree/main/6_TELA_DE_LOGIN/tela-login",
-    linkedin:
-      "https://www.linkedin.com/posts/jefferson-rizzetto_reactjs-vite-frontend-activity-7317909442220515329-v6B3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
-  },
-
-  {
-    id: 4,
-    title: "Portifolio Fullstack + agentes de IA",
-    description:
-      "O projeto-portifolio-full-stack é uma aplicação full stack que integra tecnologias populares do mercado para criar uma vitrine digital das habilidades e projetos de um desenvolvedor, a aplicação incorpora agentes de IA inteligentes que têm acesso completo ao currículo, repositórios do GitHub e histórico do profissional.",
-    image: "/projects/image4.png",
+      "Aplicação full stack com autenticação, autorização, posts, comentários e curtidas. Cada usuário gerencia apenas seu conteúdo. Projeto focado em lógica, segurança e deploy real.",
+    image: "/projects/Sistema-Postagens-img.png",
     tags: [
       "React",
-      "Next.js",
-      "NestJS",
-      "Prisma",
-      "Supabase",
-      "TailwindCSS",
-      "n8n",
+      "Node.js",
+      "Express",
+      "JWT",
+      "Sequelize",
+      "MySQL",
+      "Vercel",
+      "Render",
     ],
-    demoUrl: "https://github.com/JRizzetto/projeto-portifolio-full-stack",
-    githubUrl: "https://github.com/JRizzetto/projeto-portifolio-full-stack",
+    demoUrl: "https://full-stack-post-list.vercel.app/login",
+    githubUrl:
+      "https://github.com/JRizzetto/full-stack-projects/tree/main/post-list",
     linkedin:
-      "https://www.linkedin.com/posts/jefferson-rizzetto_devfullstack-nextjs-nestjs-activity-7310375517445095425-Fc5B?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
+      "https://www.linkedin.com/posts/jefferson-rizzetto_meu-primeiro-projeto-full-stack-em-produ%C3%A7%C3%A3o-activity-7407026814860087296-sSgm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
   },
-
   {
-    id: 5,
-    title: "Instagram Clone Page do Naruto",
+    id: 4,
+    title: "Movie List App",
     description:
-      "Recentemente, desenvolvi uma página Front-End inspirada no Instagram e com personagens do Naruto como usuários, trazendo elementos e funcionalidades essenciais da plataforma. O projeto foi feito com HTML, CSS e JavaScript totalamente responsiva.",
-    image: "/projects/image5.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demoUrl: "https://jrizzetto.github.io/insta-clone-ON/",
-    githubUrl: "https://github.com/JRizzetto/insta-clone-ON",
+      "Aplicação em React para listagem de filmes consumindo a API do The Movie Database. Possui busca, favoritos e navegação dinâmica entre páginas.",
+    image: "/projects/Movie-List-img.png",
+    tags: ["React", "Vite", "API REST", "React Router", "Context API", "CSS"],
+    demoUrl: "https://movie-list-react-peach.vercel.app/",
+    githubUrl: "https://github.com/JRizzetto/Movie-List-React",
     linkedin:
-      "https://www.linkedin.com/posts/jefferson-rizzetto_programaaexaeto-codificaaexaeto-frontend-activity-7307780238879375360-6tG2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
-  },
-
-    {
-    id: 6,
-    title: "YouTube Page Clone",
-    description:
-      "Desenvolvido com foco em front-end, essa aplicação recria a interface do YouTube utilizando JavaScript, HTML, CSS e API (Application Programming Interface), garantindo uma experiência totalmente responsiva e com diversas funcionalidades inspiradas no YouTube.",
-    image: "/projects/image6.png",
-    tags: ["HTML", "CSS", "JavaScript", "API"],
-    demoUrl: "https://github.com/JRizzetto/clones-page/tree/main/youtube-clone",
-    githubUrl: "https://github.com/JRizzetto/clones-page/tree/main/youtube-clone",
-    linkedin:
-      "https://www.linkedin.com/posts/jefferson-rizzetto_javascript-frontenddevelopment-webdevelopment-activity-7303467028760137728-IH53?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
+      "https://www.linkedin.com/posts/jefferson-rizzetto_reactjs-vitejs-apiintegration-activity-7338538306500005889-AAWV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-0z_QB32_lL5osxuoguiexZvYzQEMWvcQ",
   },
 ];
 
@@ -123,7 +89,7 @@ export const ProjectSection = () => {
           foco na experiência do usuário.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {projects.map((project, key) => (
             <div
               key={key}

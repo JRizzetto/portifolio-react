@@ -3,37 +3,47 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 90, category: "frontend" },
-  { name: "JavaScript", level: 80, category: "frontend" },
-  { name: "Bootstrap", level: 65, category: "frontend" },
-  { name: "React", level: 70, category: "frontend" },
-  { name: "TypeScript", level: 40, category: "frontend" },
-  { name: "Tailwind CSS", level: 65, category: "frontend" },
-  { name: "Next.js", level: 60, category: "frontend" },
-  { name: "Axios / Fetch API", level: 60, category: "frontend" },
+  { name: "HTML5", category: "frontend" },
+  { name: "CSS3", category: "frontend" },
+  { name: "JavaScript (ES6+)", category: "frontend" },
+  { name: "React", category: "frontend" },
+  { name: "Tailwind CSS", category: "frontend" },
+  { name: "Bootstrap", category: "frontend" },
+  { name: "React Router", category: "frontend" },
+  { name: "Axios / Fetch API", category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 65, category: "backend" },
-  { name: "Express", level: 50, category: "backend" },
-  { name: "MongoDB", level: 60, category: "backend" },
-  { name: "RESTful APIs", level: 60, category: "backend" },
+  { name: "Node.js", category: "backend" },
+  { name: "Express", category: "backend" },
+  { name: "RESTful APIs", category: "backend" },
+  { name: "JWT (autenticação)", category: "backend" },
+
+  // banco de dados
+  { name: "MySQL", category: "database" },
+  { name: "MongoDB", category: "database" },
 
   // Tools
-  { name: "Git/GitHub", level: 65, category: "tools" },
-  { name: "Figma (leitura de layout)", level: 40, category: "tools" },
-  { name: "VS Code", level: 90, category: "tools" },
-  { name: "Prisma", level: 40, category: "tools" },
-  { name: "Supabase", level: 40, category: "tools" },
-  { name: "n8n", level: 40, category: "tools" },
+  { name: "Git/GitHub", category: "tools" },
+  { name: "Vite", category: "tools" },
+  { name: "VS Code", category: "tools" },
+  { name: "Insomnia", category: "tools" },
+  { name: "Figma (leitura de layout)", category: "tools" },
+  { name: "Deploy (Vercel, Render, Railway)", category: "tools" },
+
+  // Estudando atualmente
+  { name: "TypeScript", category: "estudando" },
+  { name: "Next.js", category: "estudando" },
+  { name: "Supabase", category: "estudando" },
+  { name: "n8n", category: "estudando" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "frontend", "backend", "tools", "database"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "all" || skill.category === activeCategory,
   );
 
   return (
@@ -49,10 +59,10 @@ export const SkillsSection = () => {
               key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                "px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-foreground hover:bg-secondary"
+                  : "bg-secondary/70 text-foreground hover:bg-secondary",
               )}
             >
               {category}
@@ -70,16 +80,11 @@ export const SkillsSection = () => {
                 <h3 className="font-semibold text-lg">{skill.name}</h3>
               </div>
               <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out"
-                  style={{ width: skill.level + "%" }}
-                />
+                <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out" />
               </div>
 
               <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level}%
-                </span>
+                <span className="text-sm text-muted-foreground"></span>
               </div>
             </div>
           ))}
