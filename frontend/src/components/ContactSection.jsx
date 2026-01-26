@@ -54,7 +54,7 @@ export const ContactSection = () => {
                   <Mail className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium">Email</h4>
+                  <h4 className="font-medium text-left">Email</h4>
                   <a
                     href="mailto:jeffersonrizzetto@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -69,7 +69,7 @@ export const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium">Whatsapp</h4>
+                  <h4 className="font-medium text-left">Whatsapp</h4>
                   <a
                     href="tel:+551194629-8477"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -84,7 +84,7 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium">Location</h4>
+                  <h4 className="font-medium text-left">Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
                     São Paulo, Brasil
                   </a>
@@ -110,19 +110,15 @@ export const ContactSection = () => {
               </div>
             </div>
           </div>
-          <div
-            className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
-          >
+          <div className="bg-card p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6">Envie uma mensagem</h3>
 
-            <form className="space-y-6 disabled">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Seu Nome
                 </label>
                 <input
@@ -130,7 +126,7 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary cursor-not-allowed"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="Jefferson Rizzetto..."
                 />
               </div>
@@ -140,7 +136,6 @@ export const ContactSection = () => {
                   htmlFor="email"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Seu E-mail
                 </label>
                 <input
@@ -148,7 +143,7 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary cursor-not-allowed"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="exemplo@gmail.com"
                 />
               </div>
@@ -158,14 +153,13 @@ export const ContactSection = () => {
                   htmlFor="message"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Seu Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none cursor-not-allowed"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none "
                   placeholder="Olá, eu gostaria de falar sobre..."
                 />
               </div>
@@ -174,7 +168,7 @@ export const ContactSection = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2"
+                  "cosmic-button w-full flex items-center justify-center gap-2",
                 )}
               >
                 {isSubmitting ? "Enviado ..." : "Enviar Mensagem"}
