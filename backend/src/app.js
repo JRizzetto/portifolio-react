@@ -7,6 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/contact", contactRoutes);
+app.use("/contact", contactRoutes);
 
 export default app;
