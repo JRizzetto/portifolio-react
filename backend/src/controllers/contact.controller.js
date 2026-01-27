@@ -3,6 +3,7 @@ import { sendContactMail } from "../services/mail.service.js";
 export async function sendContactMessage(req, res) {
   const { name, email, message } = req.body;
 
+  // Validation
   if (!name || !email || !message) {
     return res.status(400).json({
       success: false,
