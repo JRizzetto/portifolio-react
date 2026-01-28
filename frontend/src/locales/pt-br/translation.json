@@ -23,7 +23,8 @@
     "scroll": "Scroll"
   },
   "about": {
-    "title": "Sobre Mim",
+    "title": "Sobre",
+    "titleTwo": "Mim",
     "subtitle": "Minha trajetória: da engenharia ao desenvolvimento web",
     "text": "Meu nome é Jefferson Wellington Bonfim Rizzetto e sou desenvolvedor front-end com sólida base em tecnologia e experiência prática no desenvolvimento de aplicações web. Sou formado em Engenharia Elétrica e iniciei minha trajetória profissional atuando com tecnologia e manutenção de computadores. Ao longo dos anos, também trabalhei em áreas que exigiram forte capacidade analítica com vendas governamentais, comunicação comercial e engenharia como responsável técnico. Em 2024, decidi direcionar minha carreira definitivamente para o desenvolvimento de software, unindo lógica, criatividade e resolução de problemas. Desde então, venho me especializando em HTML, CSS, JavaScript e React, além de desenvolver projetos práticos integrando front-end com back-end em Node.js e bancos de dados COM MySQL. Atualmente, busco minha primeira oportunidade como desenvolvedor front-end, onde possa aplicar meus conhecimentos, evoluir tecnicamente e contribuir com produtos bem estruturados, performáticos e centrados na experiência do usuário.",
     "contact": "Entre em Contato",
