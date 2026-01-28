@@ -1,6 +1,9 @@
 import { ArrowDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="hero"
@@ -16,7 +19,9 @@ export const HeroSection = () => {
         </div>
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-0.5">
-            <span className="opacity-0 animate-fade-in">Olá, Eu sou </span>
+            <span className="opacity-0 animate-fade-in">
+              {t("hero.greeting")}{" "}
+            </span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
               Jefferson
             </span>
@@ -24,30 +29,24 @@ export const HeroSection = () => {
               Rizzetto
             </span>
           </h1>
-          <h2 className="text-1xl md:text-2xl">
-            Desenvolvedor Front-end com experiência em aplicações Full Stack
-          </h2>
+          <h2 className="text-1xl md:text-2xl">{t("hero.role")}</h2>
 
           {/* Versão reduzida: visível só em telas menores que 640px */}
           <p className="text-base text-muted-foreground mx-auto block sm:hidden">
-            Desenvolvedor focado em criar interfaces modernas, funcionais e bem
-            estruturadas, utilizando React e JavaScript.
+            {t("hero.description.role")}
           </p>
 
           {/* Versão completa: visível a partir de 640px */}
           <p className="text-lg md:text-xl text-muted-foreground mx-auto hidden sm:block">
-            Tenho experiência prática no desenvolvimento de aplicações front-end
-            integradas a APIs, além de projetos full stack com Node.js e MySQL,
-            sempre buscando código limpo, boa experiência do usuário e soluções
-            reais.
+            {t("hero.description.full")}
           </p>
 
           <div className="opacity-0 animate-fade-in-delay-4 flex flex-col items-center">
             <a href="#projects" className="cosmic-button m-1">
-              Veja meus trabalhos
+              {t("hero.cta.projects")}
             </a>
             <a href="#contact" className="cosmic-button m-1">
-              Entrar em Contato
+              {t("hero.cta.contact")}
             </a>
           </div>
         </div>

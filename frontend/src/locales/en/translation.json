@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "greeting": "Hi, I am",
+    "role": "Front-end Developer with experience in Full Stack applications",
+
+    "description": {
+      "short": "Developer focused on building modern, functional, and well-structured interfaces using React and JavaScript.",
+      "full": "I have hands-on experience developing front-end applications integrated with APIs, as well as full stack projects using Node.js and MySQL, always focusing on clean code, good user experience, and real-world solutions."
+    },
+
+    "cta": {
+      "projects": "View my work",
+      "contact": "Get in touch"
+    },
+
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My journey: from engineering to web development",
+    "text": "My name is Jefferson Wellington Bonfim Rizzetto, and I am a front-end developer with a solid technical background and hands-on experience building web applications. I hold a degree in Electrical Engineering and began my professional career working with technology and computer maintenance. Over the years, I have also worked in roles that required strong analytical skills, including government sales, commercial communication, and engineering as a technical lead. In 2024, I decided to fully transition my career into software development, combining logic, creativity, and problem-solving. Since then, I have been specializing in HTML, CSS, JavaScript, and React, while also developing practical projects that integrate front-end with back-end using Node.js and MySQL databases. Currently, I am seeking my first opportunity as a front-end developer, where I can apply my knowledge, continue to grow technically, and contribute to well-structured, high-performance products focused on user experience.",
+    "contact": "Get in Touch",
+    "download": "Download Resume",
+
+    "skills": {
+      "titleDev": "Web Developer",
+      "textDev": "Building responsive websites and modern applications with a focus on performance and best practices.",
+      "titleDesign": "UI/UX Design",
+      "textDesign": "Designing intuitive interfaces and experiences that keep the user at the center.",
+      "titleInt": "Front-end & Back-end Integration",
+      "textInt": "Developing integrated applications using REST APIs, authentication, data consumption, and database communication."
+    }
+  },
+  "skills": {
+    "title": "My",
+    "titleTwo": "Skills"
+  },
+  "projects": {
+    "section": {
+      "title": "Featured",
+      "titleTwo": "Projects",
+      "description": "Here are some of the projects I have developed over the past months. Each project was carefully built with attention to detail, performance, and a strong focus on user experience."
+    },
+
+    "items": {
+      "blogApp": {
+        "title": "Full Stack Blog App",
+        "description": "A full stack blog application with JWT authentication, complete CRUD for posts, categories, protected routes, and a rich text editor. Project focused on real-world frontend-backend integration and architecture."
+      },
+      "bookShop": {
+        "title": "Full Stack Book Shop",
+        "description": "A complete book management system with create, edit, list, and delete features. Production-ready project with integrated frontend, backend, and database."
+      },
+      "postSystem": {
+        "title": "Full Stack Post System",
+        "description": "A full stack application with authentication, authorization, posts, comments, and likes. Each user manages only their own content. Project focused on logic, security, and real deployment."
+      },
+      "movieList": {
+        "title": "Movie List App",
+        "description": "A React application for listing movies using The Movie Database API. Includes search, favorites, and dynamic page navigation."
+      }
+    },
+    "button": "Check my GitHub"
+  },
+
+  "Contact": {
+    "section": {
+      "title": "Get in",
+      "titleTwo": "Touch",
+      "text": "Have a project in mind or interested in collaborating? Feel free to reach out. I’m open to discussions and new opportunities."
+    },
+
+    "information": {
+      "contactInf": "Contact Information",
+      "contactMes": "Get in Touch",
+      "formMessage": {
+        "text": "Send a message",
+        "name": "Your Name",
+        "email": "Your Email",
+        "message": "Your Message"
+      }
+    }
+  }
+}

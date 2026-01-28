@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "role": "Desenvolvedor Front-end com experiência em aplicações Full Stack",
+
+    "description": {
+      "short": "Desenvolvedor focado em criar interfaces modernas, funcionais e bem estruturadas, utilizando React e JavaScript.",
+      "full": "Tenho experiência prática no desenvolvimento de aplicações front-end integradas a APIs, além de projetos full stack com Node.js e MySQL, sempre buscando código limpo, boa experiência do usuário e soluções reais."
+    },
+
+    "cta": {
+      "projects": "Veja meus trabalhos",
+      "contact": "Entrar em contato"
+    },
+
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "subtitle": "Minha trajetória: da engenharia ao desenvolvimento web",
+    "text": "Meu nome é Jefferson Wellington Bonfim Rizzetto e sou desenvolvedor front-end com sólida base em tecnologia e experiência prática no desenvolvimento de aplicações web. Sou formado em Engenharia Elétrica e iniciei minha trajetória profissional atuando com tecnologia e manutenção de computadores. Ao longo dos anos, também trabalhei em áreas que exigiram forte capacidade analítica com vendas governamentais, comunicação comercial e engenharia como responsável técnico. Em 2024, decidi direcionar minha carreira definitivamente para o desenvolvimento de software, unindo lógica, criatividade e resolução de problemas. Desde então, venho me especializando em HTML, CSS, JavaScript e React, além de desenvolver projetos práticos integrando front-end com back-end em Node.js e bancos de dados COM MySQL. Atualmente, busco minha primeira oportunidade como desenvolvedor front-end, onde possa aplicar meus conhecimentos, evoluir tecnicamente e contribuir com produtos bem estruturados, performáticos e centrados na experiência do usuário.",
+    "contact": "Entre em Contato",
+    "download": "Baixe meu CV",
+
+    "skills": {
+      "titleDev": "Desenvolvedor Web",
+      "textDev": "Criando sites responsivos e aplicações modernas com foco em performance e boas práticas.",
+      "titleDesign": "Ui/UX Design",
+      "textDesign": "Desenvolvendo interfaces intuitivas e experiências que colocam o usuário no centro.",
+      "titleInt": "Integração Front-end & Back-end",
+      "textInt": "Desenvolvimento de aplicações integradas utilizando APIs REST, autenticação, consumo de dados e comunicação com bancos de dados."
+    }
+  },
+  "skills": {
+    "title": "Minhas",
+    "titleTwo": "Habilidades"
+  },
+  "projects": {
+    "section": {
+      "title": "Principais",
+      "titleTwo": "Projetos",
+      "description": "Aqui estão os meus projetos desenvolvidos ao longo desses meses. Cada projeto foi cuidadosamente criado com atenção, detalhe, performance e foco na experiência do usuário."
+    },
+
+    "items": {
+      "blogApp": {
+        "title": "Blog App Full Stack",
+        "description": "Aplicação full stack de blog com autenticação JWT, CRUD completo de posts, categorias, rotas protegidas e editor de texto rico. Projeto focado em integração frontend-backend e arquitetura real."
+      },
+      "bookShop": {
+        "title": "Book Shop Full Stack",
+        "description": "Sistema completo de gerenciamento de livros com cadastro, edição, listagem e remoção. Projeto em produção com frontend, backend e banco de dados integrados."
+      },
+      "postSystem": {
+        "title": "Sistema de Postagens Full Stack",
+        "description": "Aplicação full stack com autenticação, autorização, posts, comentários e curtidas. Cada usuário gerencia apenas seu conteúdo. Projeto focado em lógica, segurança e deploy real."
+      },
+      "movieList": {
+        "title": "Movie List App",
+        "description": "Aplicação em React para listagem de filmes consumindo a API do The Movie Database. Possui busca, favoritos e navegação dinâmica entre páginas."
+      }
+    },
+    "button": "Verifique meu GitHub"
+  },
+  "Contact": {
+    "section": {
+      "title": "Entre em",
+      "titleTwo": "Contato",
+      "text": "Tem algum projeto em mente ou quer colaborar? Sinta-se à vontade para entrar em contato. Estou aberto a discussões e novas oportunidades."
+    },
+
+    "information": {
+      "contactInf": "Informações de contato",
+      "contactMes": "Entre em Contato",
+      "formMessage": {
+        "text": "Envie uma mensagem",
+        "name": "Seu Nome",
+        "email": "Seu E-mail",
+        "message": "Seu Mensagem"
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 const skills = [
   // Frontend
@@ -46,11 +47,14 @@ export const SkillsSection = () => {
     (skill) => activeCategory === "all" || skill.category === activeCategory,
   );
 
+  const { t } = useTranslation();
+
   return (
     <section id="skills" className="py-24 px-4 relative bg-secundary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Minhas <span className="text-primary">Habilidades</span>
+          {t("skills.title")}
+          <span className="text-primary"> {t("skills.titleTwo")}</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">

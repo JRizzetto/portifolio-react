@@ -10,6 +10,7 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "../hooks/use-toast";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -21,6 +22,8 @@ export const ContactSection = () => {
     email: "",
     message: "",
   });
+
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -76,18 +79,18 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Entre em <span className="text-primary">Contato</span>
+          {t("Contact.section.title")}{" "}
+          <span className="text-primary">{t("Contact.section.titleTwo")}</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Tem algum projeto em mente ou quer colaborar? Sinta-se à vontade para
-          entrar em contato. Estou aberto a discussões e novas oportunidades.
+          {t("Contact.section.text")}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">
-              Informações de contato
+              {t("Contact.information.contactInf")}
             </h3>
 
             <div className="space-y-6 justify-center">
@@ -135,7 +138,9 @@ export const ContactSection = () => {
             </div>
 
             <div className="pt-8">
-              <h4 className="font-medium mb-4">Entre em Contato</h4>
+              <h4 className="font-medium mb-4">
+                {t("Contact.information.contactMes")}
+              </h4>
               <div className="flex space-x-4 justify-center">
                 <a
                   href="https://www.linkedin.com/in/jefferson-rizzetto/"
@@ -153,7 +158,9 @@ export const ContactSection = () => {
             </div>
           </div>
           <div className="bg-card p-8 rounded-lg shadow-xs">
-            <h3 className="text-2xl font-semibold mb-6">Envie uma mensagem</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              {t("Contact.information.formMessage.text")}
+            </h3>
 
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
@@ -161,7 +168,7 @@ export const ContactSection = () => {
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
-                  Seu Nome
+                  {t("Contact.information.formMessage.name")}
                 </label>
                 <input
                   type="text"
@@ -180,7 +187,7 @@ export const ContactSection = () => {
                   htmlFor="email"
                   className="block text-sm font-medium mb-2"
                 >
-                  Seu E-mail
+                  {t("Contact.information.formMessage.email")}
                 </label>
                 <input
                   type="email"
@@ -199,7 +206,7 @@ export const ContactSection = () => {
                   htmlFor="message"
                   className="block text-sm font-medium mb-2"
                 >
-                  Seu Message
+                  {t("Contact.information.formMessage.message")}
                 </label>
                 <textarea
                   id="message"

@@ -1,50 +1,27 @@
 import { Briefcase, Code, User } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const AboutSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="py-24 px-4 relative">
-      {" "}
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          Sobre <span className="text-primary">Mim</span>
+          {t("about.title")} <span className="text-primary">Mim</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">
-              Minha trajetória: da engenharia ao desenvolvimento web
-            </h3>
+            <h3 className="text-2xl font-semibold">{t("about.subtitle")}</h3>
 
             <p className="text-muted-foreground text-justify">
-              Meu nome é Jefferson Wellington Bonfim Rizzetto e sou
-              desenvolvedor front-end com sólida base em tecnologia e
-              experiência prática no desenvolvimento de aplicações web.
-            </p>
-
-            <p className="text-muted-foreground text-justify">
-              Sou formado em Engenharia Elétrica e iniciei minha trajetória
-              profissional atuando com tecnologia e manutenção de computadores.
-              Ao longo dos anos, também trabalhei em áreas que exigiram forte
-              capacidade analítica com vendas governamentais, comunicação
-              comercial e engenharia como responsável técnico.
-              <br />
-              Em 2024, decidi direcionar minha carreira definitivamente para o
-              desenvolvimento de software, unindo lógica, criatividade e
-              resolução de problemas. Desde então, venho me especializando em
-              HTML, CSS, JavaScript e React, além de desenvolver projetos
-              práticos integrando front-end com back-end em Node.js e bancos de
-              dados COM MySQL.
-              <br />
-              <br />
-              Atualmente, busco minha primeira oportunidade como desenvolvedor
-              front-end, onde possa aplicar meus conhecimentos, evoluir
-              tecnicamente e contribuir com produtos bem estruturados,
-              performáticos e centrados na experiência do usuário.
+              {t("about.text")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
-                Entre em contato
+                {t("about.contact")}
               </a>
 
               <a
@@ -52,7 +29,7 @@ export const AboutSection = () => {
                 target="_blank"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
-                Baixe meu CV
+                {t("about.download")}
               </a>
             </div>
           </div>
@@ -64,10 +41,11 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Desenvolvedor Web</h4>
+                  <h4 className="font-semibold text-lg">
+                    {t("about.skills.titleDev")}
+                  </h4>
                   <p className="text-muted-foreground">
-                    Criando sites responsivos e aplicações modernas com foco em
-                    performance e boas práticas.
+                    {t("about.skills.textDev")}
                   </p>
                 </div>
               </div>
@@ -78,10 +56,11 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Ui/UX Design</h4>
+                  <h4 className="font-semibold text-lg">
+                    {t("about.skills.titleDesign")}
+                  </h4>
                   <p className="text-muted-foreground">
-                    Desenvolvendo interfaces intuitivas e experiências que
-                    colocam o usuário no centro.
+                    {t("about.skills.textDesign")}
                   </p>
                 </div>
               </div>
@@ -93,12 +72,10 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">
-                    Integração Front-end & Back-end
+                    {t("about.skills.titleInt")}
                   </h4>
                   <p className="text-muted-foreground">
-                    Desenvolvimento de aplicações integradas utilizando APIs
-                    REST, autenticação, consumo de dados e comunicação com
-                    bancos de dados.
+                    {t("about.skills.textInt")}
                   </p>
                 </div>
               </div>

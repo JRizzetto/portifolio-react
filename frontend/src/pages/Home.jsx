@@ -10,7 +10,7 @@ import { Footer } from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       {/* Theme Toggle */}
       <ThemeToggle />
 
@@ -31,7 +31,6 @@ const Home = () => {
 
       {/* Footer */}
       <Footer />
-
     </div>
   );
 };
